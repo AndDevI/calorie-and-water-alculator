@@ -4,21 +4,39 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+
         <script src="https://cdn.tailwindcss.com"></script>
+
+        <script>
+            tailwind.config = {
+                theme: {
+                    fontFamily: {
+                        'title': ['Big Shoulders Display'],
+                        'text': ['Anek Bangla'],
+                    },
+                    extend: {
+                        backgroundImage: {
+                            'imgBg': "url('./assets/images/image-product-mobile.jpg')",
+                        }
+                    }
+                }
+            }
+        </script>
 
         <title>Fitness calculator</title>
     </head>
     <body class="flex items-center justify-center h-screen bg-green-100">
-        <main class="bg-white px-10 py-5 rounded-xl border-2 border-green-400 shadow-lg shadow-green-200">
-            <section>
+        <main class="bg-white rounded-xl border-2 border-green-400 shadow-lg shadow-green-200">
+            <section class="mt-5">
                 <div class="flex flex-col items-center text-center gap-2">
-                    <h1 class="font-bold text-xl">FITNESS CALCULATOR</h1>
+                    <h1 class="font-title font-bold text-3xl">FITNESS CALCULATOR</h1>
                     <span class="bg-green-400 h-3 w-10 rounded-xl"></span>
-                    <p class="text-sm text-gray-600">Quantidade de calorias e água que você deve <br> consumir por dia.</p>
+                    <p class="font-text text-sm text-gray-600">Quantidade de calorias e de água que você deve <br> consumir por dia.</p>
                 </div>
             </section>
             
-            <section class="grid grid-cols-2 grid-rows-4 gap-5 my-10">
+            <section class="font-text grid grid-cols-2 grid-rows-4 gap-5 my-10 mx-10">
                 <div>
                     <h6>Altura:</h6>
                     <input 
@@ -51,8 +69,7 @@
                     <select 
                         name="" 
                         id="" 
-                        class="form-select appearance-none block w-full px-3 py-2 text-gray-600 bg-white border border-gray-300 focus:outline-none focus:ring-green-400 focus:border-green-400"
-                    >
+                        class="p-2 block w-full px-3 py-2 text-gray-600 bg-white border border-gray-300 focus:outline-none focus:ring-green-400 focus:border-green-400">
                         <option value="">Selecione uma opção</option>
                         <option value="">Nenhum</option>
                         <option value="">1 a 3 vezes/semana</option>
@@ -82,7 +99,34 @@
                 </div>
 
                 <div class="col-span-2 row-start-4 place-self-center">
-                    <button class="bg-green-400 px-5 py-3 rounded-full">CALCULAR</button>
+                    <button class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 px-10 py-3 rounded-full font-bold">
+                        CALCULAR
+                    </button>
+                </div>
+            </section>
+
+            <section class="font-text grid grid-cols-3 grid-rows-3 gap-4 p-10 text-center">
+                <div >1</div>
+                <div class="row-span-2 bg-green-400 rounded-full p-10">
+                    <p>
+                        <span class="text-3xl font-bold">2000</span> <br> kcal
+                    </p>
+                </div>
+                <div >3</div>
+                <div >
+                    <p>
+                        <span class="text-3xl font-bold">2000</span> <br> kcal
+                    </p>
+                </div>
+                <div class="col-start-3">
+                    <p>
+                        <span class="text-3xl font-bold">2000</span> <br> kcal
+                    </p>
+                </div>
+                <div class="col-span-3 row-start-3">
+                    <p>
+                        <span class="text-3xl font-bold">3</span> LITROS
+                    </p>
                 </div>
             </section>
         </main>
