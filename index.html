@@ -28,21 +28,21 @@
         <title>Fitness calculator</title>
     </head>
     <body class="bg-imgBg flex items-center justify-center h-screen bg-green-100">
-        <main class="bg-transparent backdrop-blur-sm rounded-xl border-2 border-green-400 shadow-lg shadow-green-200">
+        <main class="bg-transparent backdrop-blur-lg rounded-xl border-2 border-green-400 shadow-lg shadow-green-200">
             <section class="mt-5">
                 <div class="flex flex-col items-center text-center gap-2">
                     <h1 class="font-title font-bold text-3xl">FITNESS CALCULATOR</h1>
                     <span class="bg-green-400 h-3 w-10 rounded-xl"></span>
-                    <p class="font-text text-sm text-gray-600">Quantidade de calorias e de água que você deve <br> consumir por dia.</p>
+                    <p class="font-text text-base text-gray-600">Quantidade de calorias e de água que você deve <br> consumir por dia.</p>
                 </div>
             </section>
             
-            <section class="font-text grid grid-cols-2 grid-rows-4 gap-5 my-10 mx-10">
+            <section class="font-text font-medium grid grid-cols-2 grid-rows-4 gap-5 my-10 mx-10">
                 <div>
                     <h6>Altura:</h6>
                     <input 
                         type="number" 
-                        class="numbers border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
+                        class="numbers bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
                         placeholder="Ex: 175"
                         id="height"
                     >
@@ -52,7 +52,7 @@
                     <h6>Peso:</h6>
                     <input 
                         type="text"
-                        class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
+                        class="bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
                         placeholder="Ex: 78.5"
                         id="weight"
                     >
@@ -62,7 +62,7 @@
                     <h6>Idade:</h6>
                     <input 
                         type="number"
-                        class="numbers border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
+                        class="bg-transparent numbers border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
                         placeholder="Ex: 25"
                         id="age"
                     >
@@ -70,7 +70,7 @@
 
                 <div>
                     <h6>Prática de exercícios:</h6>
-                    <select name="" id="quantExercise" class="p-2 block w-full px-3 py-2 text-gray-600 bg-white border border-gray-300 focus:outline-none focus:ring-green-400 focus:border-green-400">
+                    <select name="" id="quantExercise" class="bg-transparent p-2 block w-full px-3 py-2 text-gray-600 border-2 border-gray-400 focus:outline-none focus:ring-green-400 focus:border-green-400 hover:border-green-400 transition duration-300 ">
                         <option value="1.2">Nenhum</option>
                         <option value="1.375">1 a 3 vezes/semana</option>
                         <option value="1.55">3 a 5 vezes/semana</option>
@@ -84,7 +84,7 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                class="appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
                                 name="sex"
                                 value="male"
                             >
@@ -93,7 +93,7 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="sex appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                class="bg-transparent appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
                                 name="sex"
                                 value="famale"
                             >
@@ -103,7 +103,7 @@
                 </div>
 
                 <div class="col-span-2 row-start-4 place-self-center">
-                    <button class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 px-10 py-3 rounded-full font-bold">
+                    <button class="border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 px-10 py-3 rounded-full font-bold">
                         CALCULAR
                     </button>
                 </div>
