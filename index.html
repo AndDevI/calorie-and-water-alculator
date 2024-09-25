@@ -44,6 +44,7 @@
                         type="number" 
                         class="numbers border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
                         placeholder="Ex: 175"
+                        id="height"
                     >
                 </div>
 
@@ -63,21 +64,18 @@
                         type="number"
                         class="numbers border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
                         placeholder="Ex: 25"
+                        id="age"
                     >
                 </div>
 
                 <div>
                     <h6>Prática de exercícios:</h6>
-                    <select 
-                        name="" 
-                        id="" 
-                        class="p-2 block w-full px-3 py-2 text-gray-600 bg-white border border-gray-300 focus:outline-none focus:ring-green-400 focus:border-green-400">
-                        <option value="">Selecione uma opção</option>
-                        <option value="">Nenhum</option>
-                        <option value="">1 a 3 vezes/semana</option>
-                        <option value="">3 a 5 vezes/semana</option>
-                        <option value="">5 ou 6 vezes/semana</option>
-                        <option value="">Exercícios diários intensos</option>
+                    <select name="" id="quantExercise" class="p-2 block w-full px-3 py-2 text-gray-600 bg-white border border-gray-300 focus:outline-none focus:ring-green-400 focus:border-green-400">
+                        <option value="1.2">Nenhum</option>
+                        <option value="1.375">1 a 3 vezes/semana</option>
+                        <option value="1.55">3 a 5 vezes/semana</option>
+                        <option value="1.725">5 ou 6 vezes/semana</option>
+                        <option value="1.9">Exercícios diários intensos</option>
                     </select>
                 </div>
 
@@ -86,8 +84,9 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="sex appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
-                                id="masculino"
+                                class="appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                name="sex"
+                                value="male"
                             >
                             <label for="masculino">Masculino</label>
                         </div>
@@ -95,7 +94,8 @@
                             <input 
                                 type="checkbox"
                                 class="sex appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
-                                id="feminino"
+                                name="sex"
+                                value="famale"
                             >
                             <label for="feminino">Feminino</label>
                         </div>
@@ -120,7 +120,7 @@
                 
                 <div class="row-span-2 bg-green-400 rounded-full p-10">
                     <p>
-                        <span class="text-3xl font-bold">2000</span> <br> kcal
+                        <span id="caloriesNormal" class="text-3xl font-bold">2000</span> <br> kcal
                     </p>
                 </div>
                 
@@ -134,13 +134,13 @@
                 
                 <div >
                     <p>
-                        <span class="text-3xl font-bold">2000</span> <br> kcal
+                        <span id="caloriesLess" class="text-3xl font-bold">200</span> <br> kcal
                     </p>
                 </div>
                 
                 <div class="col-start-3">
                     <p>
-                        <span class="text-3xl font-bold">2000</span> <br> kcal
+                        <span id="caloriesMore" class="text-3xl font-bold">3000</span> <br> kcal
                     </p>
                 </div>
                 
