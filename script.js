@@ -81,6 +81,11 @@ function calculateCalories() {
 
     const water = document.querySelector('#water');
     water.textContent = (weightUser * 0.2).toFixed(2);
+
+
+    const showResults = document.querySelector('#results');
+    showResults.classList.remove("hidden");
+    showResults.classList.toggle("translate-y-0");
 }
 
 const btnCalculateCalories = document.querySelector('button')

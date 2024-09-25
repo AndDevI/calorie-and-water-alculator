@@ -16,8 +16,8 @@
                     },
                     extend: {
                         backgroundImage: {
-                            'imgBg': "url('./assets/images/image-product-mobile.jpg')",
-                        }
+                            'imgBg': "url('./assets/images/bg.png')",
+                        },
                     }
                 }
             }
@@ -27,8 +27,8 @@
 
         <title>Fitness calculator</title>
     </head>
-    <body class="flex items-center justify-center h-screen bg-green-100">
-        <main class="bg-white rounded-xl border-2 border-green-400 shadow-lg shadow-green-200">
+    <body class="bg-imgBg flex items-center justify-center h-screen bg-green-100">
+        <main class="bg-transparent backdrop-blur-sm rounded-xl border-2 border-green-400 shadow-lg shadow-green-200">
             <section class="mt-5">
                 <div class="flex flex-col items-center text-center gap-2">
                     <h1 class="font-title font-bold text-3xl">FITNESS CALCULATOR</h1>
@@ -109,7 +109,7 @@
                 </div>
             </section>
 
-            <section class="font-text grid grid-cols-3 grid-rows-3 gap-4 p-10 text-center">
+            <section id="results" class="font-text grid grid-cols-3 grid-rows-3 gap-4 p-10 text-center hidden">
                 <div class="place-self-center">
                     <img 
                         src="assets/icons/minus-solid.svg" 
