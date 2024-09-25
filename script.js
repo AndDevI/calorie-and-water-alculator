@@ -55,7 +55,6 @@ function calculateCalories() {
     const ageUser = parseFloat(document.getElementById('age').value);
     const activityFactor = parseFloat(document.getElementById('quantExercise').value); 
 
-    const activeSex = 'male';
 
     if (isNaN(heightUser) || isNaN(weightUser) || isNaN(ageUser) || isNaN(activityFactor)) {
         alert("Por favor, insira valores numéricos válidos.");
@@ -65,12 +64,23 @@ function calculateCalories() {
     let calories;
     if (activeSex === 'male') {
         calories = (((13.75 * weightUser) + (5 * heightUser) - (6.76 * ageUser)) + 66.5) * activityFactor;
-    } else {
+    } else if (activeSex === 'famale') {
         calories = (((9.56 * weightUser) + (1.85 * heightUser) - (4.68 * ageUser)) + 665) * activityFactor;
     }
 
     const caloriesNormal = document.querySelector('#caloriesNormal');
-    caloriesNormal.textContent = calories;
+    caloriesNormal.textContent = calories.toFixed(2);
+
+    const caloriesLess = document.querySelector('#caloriesLess');
+    let calcLess = calories - (calories * 0.2);
+    caloriesLess.textContent = calcLess.toFixed(2);
+
+    const caloriesMore = document.querySelector('#caloriesMore');
+    let calcMore = (calories * 0.2) + calories;
+    caloriesMore.textContent = calcMore.toFixed(2);
+
+    const water = document.querySelector('#water');
+    water.textContent = (weightUser * 0.2).toFixed(2);
 }
 
 const btnCalculateCalories = document.querySelector('button')
