@@ -7,7 +7,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
 
         <script src="https://cdn.tailwindcss.com"></script>
-
         <script>
             tailwind.config = {
                 theme: {
@@ -23,6 +22,8 @@
                 }
             }
         </script>
+
+        <script src="script.js" defer></script>
 
         <title>Fitness calculator</title>
     </head>
@@ -41,7 +42,7 @@
                     <h6>Altura:</h6>
                     <input 
                         type="number" 
-                        class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
+                        class="numbers border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
                         placeholder="Ex: 175"
                     >
                 </div>
@@ -49,9 +50,10 @@
                 <div>
                     <h6>Peso:</h6>
                     <input 
-                        type="number"
+                        type="text"
                         class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
                         placeholder="Ex: 78.5"
+                        id="weight"
                     >
                 </div>
 
@@ -59,7 +61,7 @@
                     <h6>Idade:</h6>
                     <input 
                         type="number"
-                        class="border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
+                        class="numbers border border-gray-300 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-400 placeholder:italic"
                         placeholder="Ex: 25"
                     >
                 </div>
@@ -84,16 +86,18 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                class="sex appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                id="masculino"
                             >
-                            <label for="">Masculino</label>
+                            <label for="masculino">Masculino</label>
                         </div>
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                class="sex appearance-none rounded-full h-6 w-6 border border-gray-300 bg-white checked:bg-green-400 checked:border-green-400"
+                                id="feminino"
                             >
-                            <label for="">Feminino</label>
+                            <label for="feminino">Feminino</label>
                         </div>
                     </div>
                 </div>
