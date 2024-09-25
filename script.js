@@ -55,11 +55,18 @@ function calculateCalories() {
     const ageUser = parseFloat(document.getElementById('age').value);
     const activityFactor = parseFloat(document.getElementById('quantExercise').value); 
 
+    const fields = [heightUser, weightUser, ageUser, activityFactor];
+    const inputElements = document.querySelectorAll('.field');
+    const sexElements = document.querySelectorAll('input[name="sex"]');
 
-    if (isNaN(heightUser) || isNaN(weightUser) || isNaN(ageUser) || isNaN(activityFactor)) {
-        alert("Por favor, insira valores numéricos válidos.");
-        return;
-    }
+    fields.forEach((field, index) => {
+        inputElements[index].classList.toggle("border-red-500", isNaN(field));
+    });
+
+    const isSexSelected = Array.from(sexElements).some(checkbox => checkbox.checked);
+    sexElements.forEach(checkbox => {
+        checkbox.classList.toggle("border-red-500", !isSexSelected);
+    });
 
     let calories;
     if (activeSex === 'male') {

@@ -42,7 +42,7 @@
                     <h6>Altura:</h6>
                     <input 
                         type="number" 
-                        class="numbers bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
+                        class="field numbers bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
                         placeholder="Ex: 175"
                         id="height"
                     >
@@ -52,7 +52,7 @@
                     <h6>Peso:</h6>
                     <input 
                         type="text"
-                        class="bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
+                        class="field bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300 placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
                         placeholder="Ex: 78.5"
                         id="weight"
                     >
@@ -62,7 +62,7 @@
                     <h6>Idade:</h6>
                     <input 
                         type="number"
-                        class="bg-transparent numbers border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
+                        class="field numbers bg-transparent border-2 border-gray-400 p-2 focus:outline-none focus:ring-2 focus:ring-green-400 hover:border-green-400 transition duration-300   placeholder:opacity-7 placeholder:text-sm placeholder:text-gray-500 placeholder:italic"
                         placeholder="Ex: 25"
                         id="age"
                     >
@@ -70,7 +70,8 @@
 
                 <div>
                     <h6>Prática de exercícios:</h6>
-                    <select name="" id="quantExercise" class="bg-transparent p-2 block w-full px-3 py-2 text-gray-600 border-2 border-gray-400 focus:outline-none focus:ring-green-400 focus:border-green-400 hover:border-green-400 transition duration-300 ">
+                    <select name="" id="quantExercise" class="field bg-transparent p-2 block w-full px-3 py-2 text-gray-600 border-2 border-gray-400 focus:outline-none focus:ring-green-400 focus:border-green-400 hover:border-green-400 transition duration-300">
+                        <option value="" disabled selected>Selecione uma opção</option>
                         <option value="1.2">Nenhum</option>
                         <option value="1.375">1 a 3 vezes/semana</option>
                         <option value="1.55">3 a 5 vezes/semana</option>
@@ -84,7 +85,7 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
+                                class="field appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
                                 name="sex"
                                 value="male"
                             >
@@ -93,7 +94,7 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="bg-transparent appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
+                                class="field bg-transparent appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
                                 name="sex"
                                 value="famale"
                             >
