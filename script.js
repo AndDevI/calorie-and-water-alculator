@@ -92,7 +92,8 @@ function calculateCalories() {
 
 
     const showResults = document.querySelector('#results');
-    showResults.classList.remove("hidden");
+    showResults.classList.add("p-10")
+    showResults.style.maxHeight = 500 + "px";
 }
 
 const btnCalculateCalories = document.querySelector('button')
