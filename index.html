@@ -7,23 +7,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
 
         <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    fontFamily: {
-                        'title': ['Big Shoulders Display'],
-                        'text': ['Anek Bangla'],
-                    },
-                    extend: {
-                        backgroundImage: {
-                            'imgBg': "url('./assets/images/bg.png')",
-                        },
-                    }
-                }
-            }
-        </script>
+        <script src="tailwind.config.js"></script>
 
-        <script src="script.js" defer></script>
+        
 
         <title>Fitness calculator</title>
     </head>
@@ -85,7 +71,7 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="field appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
+                                class="appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
                                 name="sex"
                                 value="male"
                             >
@@ -94,7 +80,7 @@
                         <div class="flex items-center gap-2">
                             <input 
                                 type="checkbox"
-                                class="field bg-transparent appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
+                                class="bg-transparent appearance-none rounded-full h-6 w-6 border-2 border-gray-400 checked:bg-green-400 checked:border-green-400 hover:border-green-400 transition duration-300"
                                 name="sex"
                                 value="famale"
                             >
@@ -158,4 +144,6 @@
             </section>
         </main>
     </body>
+
+    <script src="script.js" defer></script>
 </html>
