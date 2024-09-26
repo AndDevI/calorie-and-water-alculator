@@ -8,7 +8,7 @@
 <br>
 
 <p align="center">
-  <img alt="Fitness calculator" src="./assets/images/preview.jpg" width="100%">
+  <img alt="Fitness calculator" src="./assets/images/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
